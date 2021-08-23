@@ -1,0 +1,110 @@
+@charset "utf-8";
+body{
+    font-family: Arial, Verdana, sans-serif;
+    background-image: url("kepek/black.png");
+    color: beige;
+}
+main{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(255,255,255);
+    color: black;
+    display: grid;
+    grid-template-areas:
+        "h h h h"
+        "n n n n"
+        "a a a a"
+        "f f f f";
+
+}
+main, article, header, footer, nav{
+    box-sizing: border-box;
+
+}
+header{
+    background-image: url("kepek/game.jpg");
+    grid-area:h;
+    height: 300px;
+    background-size: cover;
+}
+
+nav{
+    grid-area:n;
+    text-decoration: none;
+    background-color: gray;
+
+}
+nav li{
+
+    list-style-type: none;
+    display: inline;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+article{
+    font-size: 15pt;
+    margin: 0px;
+    grid-area:a;
+    float: left;
+
+}
+article ul li{
+    text-align: left;
+    font-size: 20px;
+    list-style-type: square;
+    
+        
+}
+h1{
+    font-size: 25px;
+}
+p{
+    text-align: center; 
+}
+img{
+    width: 30%;
+    height: auto;
+    float: right;
+
+
+}
+
+footer{
+    background-color: yellow;
+    color: black;
+    grid-area:f;
+
+    
+
+}
+h1,p{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+table tr:nth-child(1):hover{
+    background-color: gray;
+}
+table tr:nth-child(2):hover{
+    background-color: gray;
+}
+table tr:nth-child(3):hover{
+    background-color: gray;
+}
+
+nav li a:hover{
+    background-color: orange;
+}
+
+
+@media screen and (max-width: 700px) {
+   
+    nav li{
+    display: flex;
+    }
+}
